@@ -1,6 +1,7 @@
 # Serverless URL Shortener
-
 A fully serverless URL shortener built on AWS. Paste a long link, get back a short one that redirects to the original — no third-party shortening service involved.
+
+![meme](docs/meme.jpg)
 
 **Live demo:** https://d11q44a19mxrj4.cloudfront.net
 

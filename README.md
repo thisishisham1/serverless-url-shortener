@@ -23,7 +23,7 @@ The entire application — frontend and backend — is delivered without a singl
 
 # 2. AWS Architecture
 
-![Architecture](docs/architecture.png)
+![Architecture](docs/archirecture.png)
 
 | AWS Service | Purpose |
 |---|---|

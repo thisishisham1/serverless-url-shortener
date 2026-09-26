@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Shortener</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page">
+    <header class="intro">
+      <h1>Shrink a link.<br>Keep it.</h1>
+      <p class="sub">Paste a long URL — get back something you can actually send in a text message.</p>
+    </header>
+
+    <section class="tool">
+      <form id="shortenForm" class="tool-form">
+        <input
+          type="url"
+          id="longUrl"
+          placeholder="https://example.com/a/very/long/path?that=goes&on=forever"
+          required
+        />
+        <button type="submit" id="shortenBtn">
+          <span id="btnLabel">Shorten</span>
+          <span id="btnLoader" class="loader" style="display:none;"></span>
+        </button>
+      </form>
+
+      <div id="result" class="result" style="display:none;">
+        <code id="shortLink"></code>
+        <button id="copyBtn" type="button">Copy</button>
+      </div>
+
+      <p id="errorMsg" class="error" style="display:none;"></p>
+    </section>
+
+    <section id="recentSection" class="recent" style="display:none;">
+      <p class="recent-label">This session</p>
+      <ul id="recentList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">Built by Hisham Mohamed — Network &amp; Cloud Security Engineer</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
